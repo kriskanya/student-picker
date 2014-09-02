@@ -1,0 +1,7 @@
+%h1 Student Picker
+
+= button_to "Pick Someone", select_students_path, method: "get"
+%h2 Students:
+%ul#students= render @students
+
+= link_to "Add Student", new_student_path
