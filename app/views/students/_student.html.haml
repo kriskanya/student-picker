@@ -1,2 +1,6 @@
 %li
   =student.name
+  -if student.last_called
+    =time_ago_in_words(student.last_called)
+  -else
+    Never called
